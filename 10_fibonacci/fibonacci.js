@@ -3,12 +3,12 @@ const fibonacci = function(number) {
         return "OOPS"
     };
     number = Number(number);
-    let sum = [1, 1];
+    let fibonacciSequence = [1, 1];
     for (let i = 1; i <= number; i++) {
         sum.push(sum[i] + sum[i-1]);
     }
 
-    return sum[number-1];
+    return fibonacciSequence[number-1];
 
 };
 
